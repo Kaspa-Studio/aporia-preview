@@ -359,9 +359,9 @@ h4 { font-size: 18px; line-height: 22px; }
   margin-top: var(--spacing-xxxl);
   max-width: 960px;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden;
   border-radius: 4px;
-  line-height: 0;
+  line-height: 0; */
 }
 
 .hero-banner {
