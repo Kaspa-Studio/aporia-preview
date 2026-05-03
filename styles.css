@@ -338,9 +338,18 @@ h4 { font-size: 18px; line-height: 22px; }
 }
 
 .hero-kaspa-badge {
-  height: 144px !important;
-  width: auto !important;
+  height: 110px !important;
+  width: 96px !important;
   max-width: none;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.hero-igra-badge {
+  height: 115px !important;
+  width: 96px !important;
+  max-width: none;
+  object-fit: contain;
   opacity: 0.9;
 }
 
@@ -350,11 +359,15 @@ h4 { font-size: 18px; line-height: 22px; }
   margin-top: var(--spacing-xxxl);
   max-width: 960px;
   width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 0;
 }
 
 .hero-banner {
   width: 100%;
-  border-radius: var(--radius-lg);
+  display: block;
+  border-radius: 4px;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
