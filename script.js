@@ -105,9 +105,19 @@
     toastTimer = setTimeout(() => toast.classList.remove('toast--visible'), 2000);
   }
 
+  // Logo scrolls back to top
+  const navLogo = document.querySelector('.nav-logo');
+  if (navLogo) {
+    navLogo.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   document.querySelectorAll('a[href="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
+      if (!e.currentTarget.dataset.toast) return;
       showToast(e.currentTarget, e.currentTarget.dataset.toast);
     });
   });
